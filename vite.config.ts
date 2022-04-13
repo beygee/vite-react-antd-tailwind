@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import lessToJS from 'less-vars-to-js'
 import react from '@vitejs/plugin-react'
 import vitePluginImp from 'vite-plugin-imp'
+import { ViteAliases } from 'vite-aliases'
 import { resolve } from 'path'
 import fs from 'fs'
 
@@ -12,6 +13,7 @@ const themeVariables = lessToJS(
 
 export default defineConfig({
   plugins: [
+    ViteAliases({ useConfig: true, useTypescript: true }),
     react(),
     vitePluginImp({
       libList: [

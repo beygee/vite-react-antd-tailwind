@@ -1,11 +1,7 @@
-import { Button } from 'antd'
+import { HomePage } from '@pages'
 
 function App() {
-  return (
-    <div className="App">
-      <Button>asdsa</Button>
-    </div>
-  )
+  return <HomePage />
 }
 
 export default App
