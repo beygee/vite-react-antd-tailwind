@@ -1,4 +1,5 @@
 import 'twin.macro'
+
 import { Button } from 'antd'
 
 export const HomePage = () => {
@@ -8,6 +9,7 @@ export const HomePage = () => {
       <span className="font-bold" tw="text-blue-500">
         asasdd
       </span>
+      <img />
     </div>
   )
 }
