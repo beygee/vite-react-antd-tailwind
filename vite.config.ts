@@ -14,7 +14,11 @@ const themeVariables = lessToJS(
 export default defineConfig({
   plugins: [
     ViteAliases({ useConfig: true, useTypescript: true }),
-    react(),
+    react({
+      babel: {
+        plugins: ['babel-plugin-macros', 'babel-plugin-styled-components'],
+      },
+    }),
     vitePluginImp({
       libList: [
         {
